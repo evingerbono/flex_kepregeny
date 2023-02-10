@@ -5,9 +5,13 @@
 main,header,nav,article,footer{
     border: 1px solid gray;
 }
+body{
+    background-color: aqua;
+}
 main{
     margin: auto;
     max-width: 1400px;
+    background-color: white;
 }
 header{
     display: flex;
@@ -15,14 +19,45 @@ header{
 }
 nav{
     display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
 }
 section{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
 }
-article{
-    display: flex;
+article.elso{
+    flex: 0 0 calc(25% - 10px);
+}
+article.masodik{
+    flex: 0 0 calc(50% - 10px);
+}
+article.harmadik{
+    flex: 0 0 calc(33% - 10px);
 }
 footer{
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+    article.elso{
+        flex: 0 0 calc(50% - 10px);
+    }
+    article.masodik{
+        flex: 0 0 calc(50% - 10px);
+    }
+    article.harmadik{
+        flex: 0 0 calc(50% - 10px);
+    }
 }
