@@ -5,3 +5,24 @@
 main,header,nav,article,footer{
     border: 1px solid gray;
 }
+main{
+    margin: auto;
+    max-width: 1400px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+}
+section{
+    display: flex;
+}
+article{
+    display: flex;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
