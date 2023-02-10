@@ -1,0 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
+main,header,nav,article,footer{
+    border: 1px solid gray;
+}
