@@ -11,23 +11,28 @@ body{
 main{
     margin: auto;
     max-width: 1400px;
-    background-color: white;
+    background-color: lightblue;
     
 }
 header{
     display: flex;
     justify-content: center;
+    background-image: url("./kepek/fejlec_hatter.jpg");
+    height: 300px;
+    align-items: center;
+    font-size: 30px;
 }
 nav{
     display: flex;
     justify-content: flex-end;
+    background-color: rgb(42, 172, 216);
 }
 nav ul{
     list-style-type: none;
 }
 nav ul li a{
     text-decoration: none;
-    color: brown;
+    color: rgb(230, 224, 144);
     font-size: larger;
     font-weight: bold;
 }
@@ -36,6 +41,7 @@ section{
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 10px;
+    margin: 2px;
 }
 article.elso{
     flex: 0 0 calc(25% - 10px);
@@ -51,6 +57,7 @@ footer{
     justify-content: center;
     font-weight: bolder;
     font-size: large;
+    background-color: yellow;
 }
 
 @media screen and (max-width:600px) {
@@ -62,5 +69,8 @@ footer{
     }
     article.harmadik{
         flex: 0 0 calc(50% - 10px);
+    }
+    header{
+        font-size: 15px;
     }
 }
